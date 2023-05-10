@@ -1,0 +1,7 @@
+[data-hidden]~p {
+    display: none;
+}
+
+[data-hidden]:checked~p {
+    display: block;
+}
