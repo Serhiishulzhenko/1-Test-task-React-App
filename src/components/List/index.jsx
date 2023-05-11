@@ -1,5 +1,6 @@
 import React from 'react';
 import { Note } from '../index';
+import "./index.css";
 
 export const List = ({ notes, onEdit, onDelete }) => {
   return (

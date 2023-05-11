@@ -5,3 +5,39 @@
 [data-hidden]:checked~p {
     display: block;
 }
+
+
+input[type="checkbox" i] {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.note {
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #5e6f78;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.note:last-child {
+    margin-bottom: 0;
+}
+
+.note__button {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.note button:first-of-type {
+    margin-right: 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+    margin-left: auto;
+}

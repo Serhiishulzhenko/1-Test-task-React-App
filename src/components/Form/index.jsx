@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./index.css";
 
 export const Form = ({ note, onSubmit }) => {
   const [title, setTitle] = useState(note ? note.title : "");
@@ -12,14 +13,16 @@ export const Form = ({ note, onSubmit }) => {
   };
 
   return (
-    <form onSubmit={submitForm}>
+    <form onSubmit={submitForm} className="form">
       <input 
+        className="input"
         type="text" 
         placeholder="Title" 
         value={title} 
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea 
+        className="textarea"
         placeholder="Body" 
         value={body} 
         onChange={(e) => setBody(e.target.value)}

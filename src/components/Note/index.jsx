@@ -21,12 +21,14 @@ export const Note = ({ note, onEdit, onDelete }) => {
     <div className="note">
       <h2>{note.title}</h2>
       <section>
-        <label htmlFor={note.id}>Show Description</label>
         <input type="checkbox" id={note.id} data-hidden />
+        <label htmlFor={note.id} form={note.id}>Show Description</label>
         <p>{note.body}</p>
       </section>
+      <div className="note__button">
       <button onClick={() => setISedit(true)}>Edit</button>
       <button onClick={() => onDelete(note.id)}>Delete</button>
+      </div>
     </div>
   );
 };
